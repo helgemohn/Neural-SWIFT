@@ -21,9 +21,9 @@ conda env create -f environment.yml
 
 This repository is organized as follows:
 
-- [data](#real-cool-heading) download the files of this benchmark dataset to this directory. The followings scripts ecpects the data to be downloaded upfront.
-- 'tools' contains Python files to open and process the dataset
-- 'main.ipynb' provides vanilla code to explore the dataset
+- [data](https://github.com/helgemohn/SWIFT-AI-DS/tree/main/data): download the files of this benchmark dataset to this directory. The followings scripts ecpects the data to be downloaded upfront.
+- [tools](https://github.com/helgemohn/SWIFT-AI-DS/tree/main/tools):  contains Python files to open and process the dataset
+- [main.ipynb](https://github.com/helgemohn/SWIFT-AI-DS/tree/main/main.ipynb): provides vanilla code to explore the dataset
 
 ## Using the code
 
@@ -36,7 +36,7 @@ Please see the figures README for details on reproducing the paper's figures.
 ## Cite
 
 If you found this benchmark dataset useful in your research, please consider citing:
-<! ---
+
 @misc{mohn2021bdfd,
  author={Helge {Mohn} and Daniel {Kreyling} and Ingo {Wohltmann} and Ralph {Lehmann} and Markus {Rex}},
  title={{Benchmark dataset for 24h tendencies of stratospheric ozone}},
@@ -46,7 +46,6 @@ If you found this benchmark dataset useful in your research, please consider cit
  type={data set},
  publisher={PANGAEA}
 }
---- !>
 
 ## Acknowledgements
 
