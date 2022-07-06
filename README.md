@@ -1,6 +1,7 @@
-# SWIFT-AI-DS: Benchmark Dataset for 24h Tendencies of Stratospheric Ozone
+# SWIFT-AI-DS: 
+#  Simulating the stratospheric ozone layer: a comprehensive benchmark dataset to learn 24-hour ozone tendencies
 
-Code repository related to the benchmark dataset described in the paper (ToDo).
+Code repository related to the benchmark dataset (ToDo).
 
 ## Abstract
 ToDo
@@ -8,8 +9,6 @@ ToDo
 ## Dataset Meta data
 ### source
 Two simulations (each 2.5 years) of the Lagrangian chemistry and transport model ATLAS using the full stratospheric chemistry model. Storage time step: each 24h at 00:00UTC modeltime. Version 2020. Reaction Rates from NASA Chemical Kinetics and Photochemical Data (2015).
-
-
 
 ## Installation
 
@@ -22,7 +21,7 @@ conda env create -f environment.yml
 
 This repository is organized as follows:
 
-- 'data' download the files of this benchmark dataset to this directory. The followings scripts ecpects the data to be downloaded upfront.
+- [data](#real-cool-heading) download the files of this benchmark dataset to this directory. The followings scripts ecpects the data to be downloaded upfront.
 - 'tools' contains Python files to open and process the dataset
 - 'main.ipynb' provides vanilla code to explore the dataset
 
