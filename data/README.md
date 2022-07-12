@@ -1,7 +1,6 @@
 # SWIFT-AI-DS: data
 
-Data directory
-Download benchmark dataset first.
+Data directory: Download benchmark dataset first
 
 Please follow the recommendations: https://wiki.pangaea.de/wiki/Download_many
 
