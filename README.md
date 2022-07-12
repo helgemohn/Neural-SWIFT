@@ -28,9 +28,9 @@ We provide an environment file environment.yml or requirements.txt containing th
 - conda
 `conda env create -f environment.yml`
 - pip
-`python3 -m venv env
+```python3 -m venv env
 source env/bin/activate
-pip install -r requirements.txt`
+pip install -r requirements.txt```
 
 ## Repository Structure
 
