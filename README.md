@@ -20,7 +20,7 @@ Chemistry and transport model ATLAS (Wohltmann and Rex, 2009; Wohltmann et al., 
 - November 1998 to March 2001
 - November 2004 to March 2007
 ### Variables
-See [description_variables.pdf](https://github.com/helgemohn/SWIFT-AI-DS/tree/main/description_variables.pdf)
+See [Description_Variables.pdf](https://github.com/helgemohn/SWIFT-AI-DS/tree/main/Description_Variables.pdf)
 
 ## Installation
 
