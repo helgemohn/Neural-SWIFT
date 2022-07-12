@@ -62,4 +62,4 @@ If you found this benchmark dataset useful in your research, please consider cit
 ## Acknowledgements
 
 The first author was supported by grants from the Helmholtz School for Marine Data Science (MarDATA) (HIDSS-0005) and partly co-funded as part of the PhD program of the Alfred Wegener Institute for Polar and Marine Research.
-The authors gratefully acknowledge the Earth System Modelling Project (ESM) for funding this work by providing computing time on the ESM partition of the supercomputer JUWELS at the J\"ulich Supercomputing Centre (JSC).
+The authors gratefully acknowledge the Earth System Modelling Project (ESM) for funding this work by providing computing time on the ESM partition of the supercomputer JUWELS at the Jülich Supercomputing Centre (JSC).
