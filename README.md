@@ -23,11 +23,14 @@ Chemistry and transport model ATLAS (Wohltmann and Rex, 2009; Wohltmann et al., 
 See [Description_Variables.pdf](https://github.com/helgemohn/SWIFT-AI-DS/tree/main/Description_Variables.pdf)
 
 ## Installation
+We provide an environment file environment.yml or requirements.txt containing the required dependencies. Clone the repo and run the following command in the root of this directory:
 
-# conda
-We provide an environment file; environment.yml containing the required dependencies. Clone the repo and run the following command in the root of this directory:
-
-conda env create -f environment.yml
+- conda
+`conda env create -f environment.yml`
+- pip
+`python3 -m venv env
+source env/bin/activate
+pip install -r requirements.txt`
 
 ## Repository Structure
 
