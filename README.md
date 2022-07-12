@@ -30,7 +30,8 @@ We provide an environment file environment.yml or requirements.txt containing th
 - pip
 ```python3 -m venv env
 source env/bin/activate
-pip install -r requirements.txt```
+pip install -r requirements.txt
+```
 
 ## Repository Structure
 
