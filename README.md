@@ -45,10 +45,6 @@ This repository is organized as follows:
 
 All experiments are run with 'main.ipynb'.
 
-## Reproducing figures
-
-Please see the figures README for details on reproducing the paper's figures.
-
 ## Cite
 
 If you found this benchmark dataset useful in your research, please consider citing:
