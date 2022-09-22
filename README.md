@@ -1,4 +1,4 @@
-# SWIFT-AI-DS: 
+# SWIFT-AI-DS
 #  Simulating the stratospheric ozone layer: a comprehensive benchmark dataset to learn 24-hour ozone tendencies
 
 Code repository related to the benchmark dataset:
