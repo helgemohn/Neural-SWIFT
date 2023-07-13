@@ -1,0 +1,46 @@
+name: "final_neural_swift"
+entity: "helgemohn"
+project: "Neural-SWIFT"
+program: training.py
+method: grid
+metric:
+    name: mean_val_loss
+    goal: minimize
+parameters:
+    seed:
+        values:
+            - 1
+    data_path_train:
+        values: 
+        - './data/Mohn-etal_2021_allfiles/SWIFT-AI_train_month_01.nc'
+        - './data/Mohn-etal_2021_allfiles/SWIFT-AI_train_month_02.nc'
+        - './data/Mohn-etal_2021_allfiles/SWIFT-AI_train_month_03.nc'
+        - './data/Mohn-etal_2021_allfiles/SWIFT-AI_train_month_04.nc'
+        - './data/Mohn-etal_2021_allfiles/SWIFT-AI_train_month_05.nc'
+        - './data/Mohn-etal_2021_allfiles/SWIFT-AI_train_month_06.nc'
+        - './data/Mohn-etal_2021_allfiles/SWIFT-AI_train_month_07.nc'
+        - './data/Mohn-etal_2021_allfiles/SWIFT-AI_train_month_08.nc'
+        - './data/Mohn-etal_2021_allfiles/SWIFT-AI_train_month_09.nc'
+        - './data/Mohn-etal_2021_allfiles/SWIFT-AI_train_month_10.nc'
+        - './data/Mohn-etal_2021_allfiles/SWIFT-AI_train_month_11.nc'
+        - './data/Mohn-etal_2021_allfiles/SWIFT-AI_train_month_12.nc'
+        - './data/Mohn-etal_2021_allfiles/SWIFT-AI_train_year.nc'
+    num_layers:
+        value: 6
+    num_neurons:
+        value: 733
+    learning_rate:
+        value: 0.0000129
+    batch_size:
+        value: 222
+    w0_initial:
+        value: 6.0
+    w0:
+        value: 4.0
+    group_name:
+        value: 'final'
+    features_in:
+        values: 
+        - 'Cly Bry NOy HOy Ox z overhead temperature daylight O2_reaction_coef O3_reaction_coef ClOy_reaction_coef ClOx_reaction_coef'
+    gpus:        
+        value: 4

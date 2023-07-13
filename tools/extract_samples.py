@@ -21,5 +21,5 @@ def extract_samples(ds: xr.Dataset, num_samples: int, seed: int = 17) -> pd.Data
     else:
         ind_samples = rng.choice(ds.dims['samples_dim'], ds.dims['samples_dim'], replace=False)
 
-    column_names = ds.attrs['features'].split(', ')
+    column_names = ds.attrs['features'].replace('[','').replace(']','').replace("'",'').split(', ')
     return pd.DataFrame(ds['data'][ind_samples, :].to_numpy(), columns=column_names)

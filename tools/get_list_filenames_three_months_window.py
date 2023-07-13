@@ -22,7 +22,7 @@ def get_list_filenames_three_months_window(path_to_dir: str, month: int, train: 
 
     filenames = []
     ds_type = 'train' if train else 'test'
-    path_to_file = path_to_dir + "SWIFT-AI-DS_{}".format(ds_type) + "_month_{}.nc"
+    path_to_file = path_to_dir + "SWIFT-AI_{}".format(ds_type) + "_month_{}.nc"
 
     for month_idx in {month_before, month_middle, month_after}:
         month_digit = str(month_idx).zfill(2)
