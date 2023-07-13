@@ -1,6 +1,14 @@
 # Neural-SWIFT
-## Emulating the stratospheric ozone chemistry for application in climate models
-### Related to SWIFT-AI-DS, a comprehensive benchmark dataset to learn 24-hour ozone tendencies
+
+This repository contains the code and data description for the paper **["Neural Representation of the Stratospheric Ozone Chemistry](https://TBD)**  by Mohn et. al.
+
+![Version](https://img.shields.io/badge/version-0.0.2-green)
+
+![Python version](https://upload.wikimedia.org/wikipedia/commons/a/a5/Blue_Python_3.8_Shield_Badge.svg)![PyTorch](https://img.shields.io/badge/PyTorch-1.11.2-orange) ![PyTorch-Lightning](https://img.shields.io/badge/PyTorch--Lightning-1.6.3-orange)
+
+
+#### Fast Stratospheric Ozone Chemistry via Neural Representations for Climate Models
+### Employs the dataset: SWIFT-AI-DS, a comprehensive benchmark dataset to learn 24-hour ozone tendencies
 
 Code repository related to the benchmark dataset:
 Mohn, H., Kreyling, D., Wohltmann, I., Lehmann, R., Rex, M., 2021. Benchmark dataset for 24-hour stratospheric ozone tendencies. https://doi.org/10.1594/PANGAEA.939121
@@ -27,7 +35,9 @@ See [Description_Variables.pdf](https://github.com/helgemohn/SWIFT-AI-DS/tree/ma
 We provide an environment file environment.yml or requirements.txt containing the required dependencies. Clone the repo and run the following command in the root of this directory:
 
 - conda
-`conda env create -f environment.yml`
+```conda create --name neural-swift --file requirements.txt --channel conda-forge
+conda activate neural-swift
+```
 - pip
 ```python3 -m venv env
 source env/bin/activate
@@ -39,16 +49,13 @@ pip install -r requirements.txt
 This repository is organized as follows:
 
 - [data](https://github.com/helgemohn/SWIFT-AI-DS/tree/main/data): download the files of this benchmark dataset to this directory. The followings scripts ecpects the data to be downloaded upfront.
-- [tools](https://github.com/helgemohn/SWIFT-AI-DS/tree/main/tools):  contains Python files to open and process the dataset
-- [main.ipynb](https://github.com/helgemohn/SWIFT-AI-DS/tree/main/main.ipynb): provides vanilla code to explore the dataset
-
-## Using the code
-
-All experiments are run with 'main.ipynb'.
+- [code](https://github.com/helgemohn/SWIFT-AI-DS/tree/main/code):  contains Python and Matlab files of Neural-SWIFT
+- [main.m](https://github.com/helgemohn/SWIFT-AI-DS/tree/main/code/matlab/main.m): provides vanilla code to test the neural network
+- [main.ipynb](https://github.com/helgemohn/SWIFT-AI-DS/tree/main/code/python/main.ipynb): explore the dataset
 
 ## Cite
 
-If you found this benchmark dataset useful in your research, please consider citing:
+If you found the benchmark dataset useful in your research, please consider citing:
 
 @misc{mohn2021bdfd,
  author={Helge {Mohn} and Daniel {Kreyling} and Ingo {Wohltmann} and Ralph {Lehmann} and Markus {Rex}},
