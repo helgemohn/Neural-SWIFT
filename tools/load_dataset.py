@@ -14,7 +14,7 @@ def load_dataset(path_to_dir: str, month: int, train: bool = False, chunks: int 
     """
     assert month > 0 and month <= 12
     ds_type = 'train' if train else 'test'
-    path_to_file = path_to_dir + '/SWIFT-AI-DS_{}_month_{}.nc'.format(ds_type, str(month).zfill(2))
+    path_to_file = path_to_dir + '/SWIFT-AI_{}_month_{}.nc'.format(ds_type, str(month).zfill(2))
     assert exists(path_to_file)
     ds = xr.open_dataset(path_to_file, chunks=chunks)
 

@@ -17,7 +17,7 @@ def get_list_filenames_twelve_months(path_to_dir: str, train: bool = False) -> [
 
     filenames = []
     ds_type = 'train' if train else 'test'
-    path_to_file = path_to_dir + "SWIFT-AI-DS_{}".format(ds_type) + "_month_{}.nc"
+    path_to_file = path_to_dir + "SWIFT-AI_{}".format(ds_type) + "_month_{}.nc"
 
     for month_idx in range(1,13):
         month_digit = str(month_idx).zfill(2)
