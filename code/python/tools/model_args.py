@@ -12,6 +12,8 @@ def get_args(model: pl.LightningModule, dataloader: pl.LightningDataModule,
     parser = model.add_model_specific_args(parser)
     parser = Trainer.add_argparse_args(parser)
     parser = dataloader.add_argparse_args(parser)
+    parser.add_argument('--mode', type=str, default='training')
+    parser.add_argument('--month', type=int, default=1)
     parser.add_argument('--num_trees', type=int, default=100)
     parser.add_argument('--continue', type=bool, default=False)
     parser.add_argument('--optimizer', type=str, default='Adam')
@@ -25,15 +27,15 @@ def get_args(model: pl.LightningModule, dataloader: pl.LightningDataModule,
     parser.add_argument(
         '--data_path_train',
         type=str,
-        default='../../../datasets/input_monthly/lowerstrat_limdyn_reduced/train/ATLAS_train_month_01.nc')
+        default='../../data/training/SWIFT-AI_train_month_01.nc')#SWIFT-AI_train_month_01.nc
     parser.add_argument(
         '--data_path_test',
         type=str,
-        default='../../../datasets/input_monthly/lowerstrat_limdyn_reduced/test/ATLAS_test_month_01.nc')
+        default='../../data/testing/SWIFT-AI_test_month_01.nc')#SWIFT-AI_test_month_01.nc
     parser.add_argument(
         '--data_path_meanstddev',
         type=str, 
-        default='../../../datasets/input_year/lowerstrat_limdyn_reduced/train/mean_stddev.nc')
+        default='../../data/mean_stddev_training_data.nc')
     
     parser.add_argument("--features_in", type=str, default='none')
     parser.add_argument("--features_out", type=str, default='none')

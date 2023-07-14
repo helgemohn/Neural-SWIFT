@@ -113,6 +113,7 @@ class SwiftAI_DataModule(pl.LightningDataModule):
                 ind_samples = rng.choice(data.sizes['samples_dim'], data.sizes['samples_dim'], replace=False)
 
             data = data['data'][ind_samples, ind_features]
+            print(data.shape)
 
             # normalization
             data[:, :] = (data[:, :] - self.mean) / self.std

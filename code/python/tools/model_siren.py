@@ -62,7 +62,7 @@ torch.nn.Siren = Siren
 # Helge Mohn (2021)
 
 class DeepNeuralNet(pl.LightningModule):
-    def __init__(self, hparams, w0=4., w0_initial=15., use_bias=True, final_activation=None, *args, **kwargs):
+    def __init__(self, hparams, w0=4., w0_initial=6., use_bias=True, final_activation=None, *args, **kwargs):
         super().__init__()
 
         # call this to save params:
@@ -114,7 +114,6 @@ class DeepNeuralNet(pl.LightningModule):
 
         # 2. Compute loss
         loss = F.mse_loss(y_hat, y)
-        #self.log('train_loss', loss, prog_bar=False, logger=True)
         return {'loss': loss}
 
     def validation_step(self, batch, batch_idx):
@@ -154,31 +153,21 @@ class DeepNeuralNet(pl.LightningModule):
 
         # 2. return prediction
         return {'predict_loss': loss,}
-               #'MSE_predict_loss': np.mean(loss**2),
-               # 'RMSE_predict_loss': np.sqrt(np.mean(loss)),
-               #'std_predict_loss': np.std(np.abs(loss)),
-               #'max_predict_loss': np.max(np.abs(loss))}
     
     def training_epoch_end(self, outputs):
         avg_loss = torch.stack([x['loss'] for x in outputs])
         avg_loss = float(avg_loss.mean()*self.std_dox)
         self.log('mean_train_loss', avg_loss, prog_bar=True, logger=True)
-        #self.log('std_train_loss', avg_loss.std(), prog_bar=True, logger=True)
-        #self.log('max_train_loss', avg_loss.max(), prog_bar=True, logger=True)
 
     def validation_epoch_end(self, outputs):
         avg_loss = torch.stack([x['val_loss'] for x in outputs])
         avg_loss = float(avg_loss.mean()*self.std_dox)
         self.log('mean_val_loss', avg_loss, prog_bar=True, logger=True)
-        #self.log('std_val_loss', avg_loss.std(), prog_bar=True, logger=True)
-        #self.log('max_val_loss', avg_loss.max(), prog_bar=True, logger=True)
 
     def test_epoch_end(self, outputs):
         avg_loss = torch.stack([x['test_loss'] for x in outputs])
         avg_loss = float(avg_loss.mean()*self.std_dox)
         self.log('mean_test_loss', avg_loss, logger=True)
-        #self.log('std_test_loss', avg_loss.std(), logger=True)
-        #self.log('max_test_loss', avg_loss.max(), logger=True)
 
     def predict_vmr(self, batch, batch_idx):
         x = batch
