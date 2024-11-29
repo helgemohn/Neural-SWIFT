@@ -54,7 +54,7 @@ This repository is organized as follows:
   
 ## Cite
 The paper referring to Neural-SWIFT:
-**[Neural Representation of the Stratospheric Ozone Chemistry]([https://TBD](https://www.cambridge.org/core/journals/environmental-data-science/article/neural-representation-of-the-stratospheric-ozone-chemistry/C91E0C5424C59765842728D51FD06FAC?utm_campaign=shareaholic&utm_medium=copy_link&utm_source=bookmark))**
+[Neural Representation of the Stratospheric Ozone Chemistry]([https://TBD](https://www.cambridge.org/core/journals/environmental-data-science/article/neural-representation-of-the-stratospheric-ozone-chemistry/C91E0C5424C59765842728D51FD06FAC?utm_campaign=shareaholic&utm_medium=copy_link&utm_source=bookmark))
 
 If you found our research on Neural-SWIFT useful in your research, please consider citing:
 
