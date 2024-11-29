@@ -53,9 +53,13 @@ This repository is organized as follows:
    * [tools](https://github.com/helgemohn/SWIFT-AI-DS/tree/main/tools): functions used by the data descriptor
   
 ## Cite
-The paper referring to Neural-SWIFT is in submission:
+The paper referring to Neural-SWIFT:
+**[Neural Representation of the Stratospheric Ozone Chemistry]([https://TBD](https://www.cambridge.org/core/journals/environmental-data-science/article/neural-representation-of-the-stratospheric-ozone-chemistry/C91E0C5424C59765842728D51FD06FAC?utm_campaign=shareaholic&utm_medium=copy_link&utm_source=bookmark))**
 
-**[Neural Representation of the Stratospheric Ozone Chemistry](https://TBD)**  by Mohn et. al.
+If you found our research on Neural-SWIFT useful in your research, please consider citing:
+
+@article{Mohn_Kreyling_Wohltmann_Lehmann_Maass_Rex_2023, title={Neural representation of the stratospheric ozone chemistry}, volume={2}, DOI={10.1017/eds.2023.35}, journal={Environmental Data Science}, author={Mohn, Helge and Kreyling, Daniel and Wohltmann, Ingo and Lehmann, Ralph and Maass, Peter and Rex, Markus}, year={2023}, pages={e41}}
+
 
 If you found the benchmark dataset useful in your research, please consider citing:
 
